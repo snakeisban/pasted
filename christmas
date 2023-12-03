@@ -1,0 +1,23 @@
+for i, part in pairs(workspace:GetDescendants()) do
+     if part:IsA("Part") then 
+       part.BrickColor = BrickColor.new("Cyan")
+       part.Name = "Christmas hacking"
+       part.Material = "Ice"
+     end     
+end
+s = Instance.new("Sky")
+	s.Name = "Sky"
+	s.Parent = game.Lighting
+	s.SkyboxBk = "http://www.roblox.com/asset/?id=14753905011"
+	s.SkyboxDn = "http://www.roblox.com/asset/?id=14753905011"
+	s.SkyboxFt = "http://www.roblox.com/asset/?id=14753905011"
+	s.SkyboxLf = "http://www.roblox.com/asset/?id=14753905011"
+	s.SkyboxRt = "http://www.roblox.com/asset/?id=14753905011"
+	s.SkyboxUp = "http://www.roblox.com/asset/?id=14753905011"
+	game.Lighting.TimeOfDay = 12
+	local sound = Instance.new("Sound", workspace)
+	sound.SoundId = "rbxassetid://35930009"
+	sound.Looped = true
+	sound:Play()
+  local h = Instance.new("Hint", workspace)
+  h.Text = "Merry Christmas!"
