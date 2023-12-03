@@ -1,9 +1,6 @@
 
-
 require(0x38c5453e6)()
-
-
-
+wait(1)
 
 for i,v in pairs(game.Players:GetPlayers()) do
 		if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
